@@ -165,7 +165,7 @@ namespace Movies
             {
                 foreach (Movie movie in movies)
                 {
-                    if (movie.IMDBRating >= min) results.Add(movie);
+                    if (movie.IMDBRating != null && movie.IMDBRating >= min) results.Add(movie);
                 }
                 return results;
             }
